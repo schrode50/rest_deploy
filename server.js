@@ -5,7 +5,7 @@ const app = module.exports = exports = express();
 const mongoose = require('mongoose');
 const errorHandle = require(__dirname + '/lib/err_handler');
 
-const dbPort = process.env.MONGOLAB_URI || 'mongodb://localhost/marvel_app_dev';
+const dbPort = process.env.MONGODB_URI || 'mongodb://localhost/marvel_app_dev';
 
 mongoose.connect(dbPort);
 
